@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Shopify-like Add Product Variant Functionality
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This project aims to replicate Shopify's functionality for adding products and their variants using React.js. Users can add products along with their variants, manage product details such as price and stock, and view/manage products seamlessly.
 
-Currently, two official plugins are available:
+## Features
+- Add new products with multiple variants
+- Specify price and stock for each product variant
+- Manage existing products
+- Intuitive user interface for easy navigation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshots
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 3](screenshots/screenshot3.png)
 
-## Expanding the ESLint configuration
+## Installation
+1. Clone the repository: `git clone https://github.com/pritkheni/frontend.git`
+2. Navigate to the project directory: `cd frontend`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage
+- Once the server is running, open your web browser and navigate to `http://localhost:5173`.
+- Use the provided interface to add new products, manage existing products, and view product details.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
+- React.js
+- Shadcn
+- Context API for sharing form data among components
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+1. Fork the project
+2. Create your feature branch: `git checkout -b feature/NewFeature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin feature/NewFeature`
+5. Submit a pull request
